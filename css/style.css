@@ -1,0 +1,139 @@
+body {
+	min-width: 1230px;
+	background: url(../images/groovepaper.png);
+}
+
+*{
+	font-family: 'Rye', cursive;
+}
+
+nav {
+	width: 100%;
+	height: 100px; 
+	background: #1B434B;
+	padding-left: 0%;
+	padding-right: 10%;
+	padding-bottom: 30px;
+}
+
+h3 {
+	margin-bottom: 30px;
+	width: 250px;
+	text-align: center;
+	text-decoration:underline #C1BDBD;
+}
+
+.description>p {
+	width: 536px;
+	height: 82px;
+	background-color: rgba(207, 207, 207, 0.3);
+	font-family: 'Zilla Slab', serif;
+	line-height: 1.5em;
+}
+
+#slider {
+	max-width: 887px;	
+	padding: 10% 15%;		
+	height: 80vh;
+	display: grid;
+	grid-template-columns: 1fr 0.1fr 0.1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	grid-template-areas: "big img1 img2" 
+						 "big img3 img4"
+						 "description img5 img6";
+}
+
+.inner {
+	grid-area: big;
+	position: relative;			
+	margin-bottom: 3px;
+}
+
+#img1 {grid-area: img1;}
+#img2 {grid-area: img2;}
+#img3 {grid-area: img3;}
+#img4 {grid-area: img4;}
+#img5 {grid-area: img5;}
+#img6 {grid-area: img6;}
+.description {grid-area: description;}
+
+.extinction {display:none;}
+.show{display: block;}
+
+.titles {	
+	width: 250px;
+	color:#FFFFFF;
+	position: absolute;
+	top: 177px;
+	background: rgba(0, 0, 0, 0.1);
+	height: 40px; 
+	text-align: center;
+	padding-top: 1%;
+	letter-spacing:0.2em;
+}
+
+.hide {display:none;}
+
+#imglogo, a {
+	display: inline-block;
+	color: #428D89;
+}
+
+#imglogo {
+	height: 100px;
+	padding-left: 15%;
+	background: url(../images/header-lines.jpg) no-repeat 100% #07292B;
+	font-size: 2em;
+	margin-right: 9%;
+}
+
+a {
+	width: 154px;
+	position: relative;
+	top:-14px;
+	padding: 17px 25px 16px 27px;	
+}
+
+.bg {
+	background: url(../images/nav-active.png) no-repeat 100% #1B434B;
+}
+
+.bg2 {
+	background: #1B434B;
+}
+
+#logo {
+	padding: 30px 20px;
+}
+
+span {
+	position: relative;
+	top:-37px;
+}
+
+#foot {
+	padding:2% 1%;
+	background: #32606D;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: flex-start;
+}
+
+
+footer>div{
+	display: inline-block;
+	margin-left: 10%; 
+}
+
+a:hover {
+	color: #FFFFFF;
+}
+
+a:nth-child(2) {
+	padding-left: 47px;
+}
+
+footer>div:nth-child(2) {
+	font-family: 'Zilla Slab', serif;	
+}
